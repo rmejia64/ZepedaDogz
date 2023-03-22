@@ -1,0 +1,292 @@
+:root {
+  --blue: #9fb4ff;
+  --red: #b14444;
+  --logo-size-sm: 50px;
+  --logo-size-md: 75px;
+  --logo-size-lg: 100px;
+
+  --big-picture-one: url("../assets/dog_man.png");
+  --big-picture-two: url("../assets/court-house.jpg");
+  --big-picture-three: url("../assets/two-tone-two.jpg");
+}
+
+@font-face {
+  font-family: "Ranchers Regular";
+  src: url(../fonts/Ranchers/Ranchers-Regular.ttf) format("truetype");
+}
+
+@media only screen and (max-width: 900px) {
+  .small-picture {
+    height: auto;
+    width: 40%;
+    border-radius: 10px;
+  }
+  #dogman {
+    width: 80vw;
+    height: auto;
+    align-self: center;
+    margin-top: 150px;
+    border-radius: 50px 50px 0px 0px;
+    border: 5px white solid;
+    border-bottom: none;
+  }
+  .service-section {
+    width: 80%;
+  }
+  #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #button-wrap {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+  }
+  #mobile-links-container {
+    width: auto;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #nav {
+    display: block;
+  }
+  #mobile-nav {
+    display: none;
+  }
+  #links-container {
+    width: auto;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .small-picture {
+    height: auto;
+    width: 20%;
+    border-radius: 10px;
+  }
+  #dogman {
+    width: 50vw;
+    height: auto;
+    align-self: center;
+    margin-top: 100px;
+    border-radius: 50px 50px 0px 0px;
+    border: 5px white solid;
+    border-bottom: none;
+  }
+  .service-section {
+    width: 30%;
+  }
+  #services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #button-wrap {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+* {
+  font-family: "Ranchers Regular";
+  font-weight: 100;
+  text-shadow: 1px 1px black;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  color: rgba(248, 248, 89, 0.76);
+  text-decoration: none;
+}
+/* main elements */
+#wrapper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #9fb4ff 100%);
+}
+#banner1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner2 {
+  background-position: center;
+  background-size: cover;
+  background-image: var(--big-picture-two);
+  background-position: 50% 80%;
+  height: 500px;
+}
+#banner3 {
+  background-position: center;
+  background-size: cover;
+  background-image: var(--big-picture-three);
+  background-position: 50% 55%;
+  height: 500px;
+}
+.info {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heading {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36pt;
+}
+#footer {
+  width: 100vw;
+  height: 75px;
+  padding-top: 25px;
+  background-color: var(--red);
+  text-align: center;
+  color: #ffffff;
+}
+
+/* about me section */
+#paragraph-wrap,
+#picture-wrap {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.subheading {
+  word-wrap: normal;
+  width: 30%;
+  font-weight: lighter;
+  text-shadow: none;
+  font-size: 12pt;
+}
+
+/* navigation */
+#nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--red);
+}
+#mobile-nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--red);
+}
+#logo,
+#mobile-logo {
+  width: var(--logo-size-md);
+  height: var(--logo-size-md);
+  margin-top: 15px;
+}
+.nav-link {
+  color: #ffffff;
+  text-shadow: 1px 1px black;
+  margin-top: 25px;
+}
+.nav-link:hover {
+  color: #ffe371;
+  cursor: pointer;
+}
+
+/* services */
+#services {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: auto;
+  align-items: center;
+}
+.service-section {
+  height: 600px;
+  border: #9fb4ff 5px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 15px;
+}
+.service-icon {
+  width: 50px;
+  height: auto;
+}
+.description {
+  width: 80%;
+  text-shadow: none;
+  margin: auto;
+  text-align: center;
+}
+.price {
+  margin: auto;
+  text-shadow: none;
+  font-size: 10pt;
+  color: gray;
+}
+
+/* buttons */
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--red);
+  border-radius: 20px;
+  text-align: center;
+  align-self: center;
+  color: white;
+  text-shadow: none;
+}
+.button:hover {
+  background-color: #722b2b;
+}
+
+/* contact form */
+#contact-me {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.textbox {
+  text-shadow: none;
+  width: 60%;
+  height: auto;
+  align-self: center;
+}
+.textbox:hover {
+  border: 2px solid beige;
+}
+#message {
+  height: 250px;
+}
