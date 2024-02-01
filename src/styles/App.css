@@ -1,0 +1,127 @@
+:root {
+  --blue: #9fb4ff;
+  --red: #b14444;
+}
+
+@font-face {
+  font-family: "Ranchers Regular";
+  src: url(../fonts/Ranchers-Regular.ttf) format("truetype");
+}
+
+* {
+  font-family: "Helvetica";
+  font-weight: 500;
+}
+
+/* main elements */
+body{
+  margin: 0;
+  background-color: #b14444;
+}
+
+#wrapper {
+  width: 100vw;
+  height: auto;
+  background-color: #b14444;
+}
+
+.section{
+  background-color: aliceblue;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  margin: 0;
+}
+
+.banner{
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#b1{
+  object-position: 50% 40%;
+  height: 500px;
+}
+
+#b2{
+  object-position: 50% 75%;
+}
+
+#b3{
+  object-position: 50% 50%;
+}
+
+#title{
+  font-size: 24pt;
+  font-weight: 800;
+  width: 350px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.subheading{
+  font-size: 24pt;
+  margin-top: 100px;
+}
+
+.content{
+  width: 100vw;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+#about-me-pic{
+  width: 40%;
+  height: auto;
+}
+
+#about-me-text{
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 12pt;
+}
+
+#about-me{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+  #about-me-text{
+    width: 75%;
+  }
+  #about-me-pic{
+    width: 60%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  #about-me-text{
+    width: 75%;
+  }
+  #about-me-pic{
+    width: 80%;
+    height: auto;
+  }
+  #b1{
+    height: 350px;
+    margin-top: 40px;
+  }
+}

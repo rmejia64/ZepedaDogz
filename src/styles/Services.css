@@ -1,0 +1,62 @@
+.services-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.service {
+    height: auto;
+    width: 25%;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+.info {
+    font-size: 12pt;
+    margin-bottom: 50px;
+}
+
+.details {
+    font-weight: 800;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    font-size: 12pt;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+#list, li{
+    padding: 0;
+    font-weight: 800;
+    list-style: none;
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {}
+
+@media only screen and (max-width: 900px) {
+    .service {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .service {
+        width: 80%;
+    }
+}
